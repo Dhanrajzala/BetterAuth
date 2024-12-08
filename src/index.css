@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+
+
+
+button {
+  @apply transition-all duration-200;
+}
+
+button:hover {
+  @apply scale-105;
+}
+
+body{
+  background: #1F2937;
+}
