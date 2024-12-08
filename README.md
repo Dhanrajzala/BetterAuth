@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+Here's a polished README description and steps to use your repository:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# BetterAuth
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
 
-## Expanding the ESLint configuration
+BetterAuth is a React application featuring two forms: Sign Up and Login. It leverages Formik for form handling and validation, ensuring clean code principles, TypeScript integration, and a seamless user experience (UX). Upon successful submission, users receive success messages such as "Sign Up Successful" or "Login Successful".
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Bonus Features (Optional)
+1. **Remember Me**: A checkbox in the Login form to save the email to local storage.
+2. **Password Strength Indicator**: A visual indicator in the Sign Up form to show password strength.
+3. **Accessibility Enhancements**: Proper ARIA roles and labels to improve accessibility.
 
-- Configure the top-level `parserOptions` property like this:
+## Steps to Use
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Clone the repository:
+   ```bash
+   git clone <repository-link>
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Navigate to the project directory:
+   ```bash
+   cd BetterAuth
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+Feel free to customize this further to match your project's specifics. Happy coding! 🚀
